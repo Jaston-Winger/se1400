@@ -15,11 +15,15 @@ header h1{
     line-height:140%; padding:.5rem;
 }
 h1{
-    background-image: url=("utahtechlogo.svg");
+    background-image:url('utahtechlogo.svg');
     background-repeat: no-repeat;
     background-position:right;
+    padding-left:1em;
+    margin-bottom:0;
 }
 nav{
+    padding-top:0.5rem; padding-right:0.5rem; padding-left:2rem;
+    padding-bottom:0.5rem;
     font-weight:bold; background-color:#F3F3F3;
 }
 h2 {
@@ -32,15 +36,39 @@ dt{
     color:#BA1C21; font-weight:bold;
 }
 footer{
+    padding:1rem;
     font-size:0.7rem; font-style:italic; text-align:center;
 }
-#homehero{
-background-image:url('homehero.jpg');
-}
-#studenthero{
-background-image:url('studenthero.jpg');
-}
+
 
 #alt{
     width:300px
 }
+h3{
+    color:#003058
+}
+main{
+    padding-left:2rem; padding-right:2rem;
+}
+#homehero{
+    background-image:url('homehero.jpg');
+    height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center
+}
+#studenthero{
+background-image:url('studenthero.jpg');
+height:300px;
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center
+}
+#facultyhero{
+background-image:url('facultyhero.jpg');
+height:300px;
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center
+}
+nav a { text-decoration: none; }
