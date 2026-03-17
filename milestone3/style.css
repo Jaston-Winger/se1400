@@ -2,7 +2,7 @@
 
 #wrapper{
     display:grid; grid-auto-rows:minmax(0,auto);
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 155px)) minmax(0px, 1fr);
+    grid-template-columns: minmax(0px, 0.5fr) 0.5fr repeat(4, minmax(0, 155px)) 0.5fr  minmax(0px, 0.5fr);
     background-color:rgb(95, 95, 95)
 }
 header{
