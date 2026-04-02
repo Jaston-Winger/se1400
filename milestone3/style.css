@@ -64,7 +64,7 @@ footer{
 #bg2{
     background:rgb(7, 1, 41);
     grid-row:1/6;
-    grid-column:8/8;
+    grid-column:-1/-2;
 }
 
 nav ul{
@@ -144,3 +144,4 @@ div {
     font-size: 24px;
     scroll-snap-type: x mandatory;
 }
+
