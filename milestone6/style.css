@@ -3,7 +3,7 @@
 #wrapper{
     display:grid; grid-auto-rows:minmax(0,auto);
     grid-template-columns: minmax(0px, 0.5fr) 0.5fr repeat(4, minmax(0, 155px)) 0.5fr  minmax(0px, 0.5fr);
-    background-color:rgb(95, 95, 95)
+    background-attachment:fixed;
 }
 #normal{
     color:rgb(78, 149, 220);
@@ -24,8 +24,46 @@ header{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'fLucida Grande', 'Lucida Sans', Arial, sans-serif
 
 }
+
+#order{
+    background-image:url('BasicImages/OutOfOrder.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    min-height:100%;
+}
+#basic{
+    background-attachment:fixed;
+    background-image:url('BasicImages/BasicBackground.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+    min-height:100%;
+}
+#peaceful{
+    background-attachment:fixed;
+    background-image:url('BasicImages/A\ PeacefulPlace.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+    min-height:100%;
+}
+#wall{
+    background-attachment:fixed;
+    background-image:url('TheLabyrinth/assets/LabrynthWall.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+    min-height:100%;
+}
+
 img{
 
+}
+#centerimg{
+    flex: 1;
+    justify-self:center;
+    align-self:center;
+    grid-column:1 / -1;
+    margin-top:20px;
+    padding:15px;
 }
 nav{
     background-color:#424242;
@@ -148,13 +186,15 @@ div {
 
 
 .carousel {
-    max-width:300px;
-    overflow-x: auto;
+    max-width:315px;
+    max-height:150px;
+    overflow-y: auto;
 }
 
 .carousel-track {
     display: flex;
-    scroll-snap-type: x mandatory;
+    flex-direction:column;
+    scroll-snap-type: y mandatory;
 }
 
 .slide {
@@ -167,15 +207,21 @@ div {
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
 }
-
+body{
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    min-height:100%;
+}
 
 @media only screen and (max-width: 992px){
     #wrapper{
         grid-template-columns:  minmax(0,1fr) 768px minmax(0,1fr);
     }
 }
+
 @media only screen and (max-width: 768px){
     #wrapper{
         grid-template-columns:  minmax(0,1fr) 100% minmax(0,1fr);
