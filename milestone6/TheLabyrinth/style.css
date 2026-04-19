@@ -22,23 +22,19 @@ header{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'fLucida Grande', 'Lucida Sans', Arial, sans-serif
 
 }
+a {
+    color:rgb(0, 166, 255)
+}
 #centerimg{
+    outline:4px solid rgb(0, 166, 255);
+  background:rgb(20, 38, 119);
+    color:rgb(0, 166, 255);
     flex: 1;
     justify-self:center;
     align-self:center;
     grid-column:1 / -1;
     margin-top:20px;
     padding:15px;
-}
-nav{
-    background-color:#424242;
-    top:0;
-    position:sticky;
-    font-weight:bold;
-    grid-row: 2/3;
-    grid-column: 2 / -2;
-    text-shadow: 0px 2px 2px rgb(12, 30, 102);
-    text-decoration:underline
 }
 nav a { 
     text-decoration: none;
@@ -53,7 +49,7 @@ main{
     grid-row:3/4;
     grid-column:2/-2;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
     gap:20px;
 }
 #hero{
@@ -94,7 +90,8 @@ nav ul li{
 }
 nav a:hover
 {
-    background-color:#0d2873
+    background-color:#11255c;
+    padding:10px;
 
 }
 #float{
@@ -154,26 +151,54 @@ body{
     background-size:cover; 
     min-height:100%;
 }
-@media only screen and (max-width: 992px){
-    #wrapper{
-        grid-template-columns:  minmax(0,1fr) 768px minmax(0,1fr);
-    }
+
+
+
+#navop{
+    transform:translateX(0px);
+    text-decoration: none;
+    color:#181969;
+    padding:1rem 0rem;
+    display:block;
+    text-align:center;
+    background-color:#092f5f;
+    outline-color:rgb(0, 94, 145);
+    bottom:0;
+    position:fixed;
+    font-weight:bold;
+    text-shadow: 0px 2px 2px rgb(12, 30, 102);
+    text-decoration:underline;
+    width:100%;
 }
 
-@media only screen and (max-width: 768px){
-    #wrapper{
-        grid-template-columns:  minmax(0,1fr) 100% minmax(0,1fr);
-    }
-    nav{
-        position:static;
-    }
-    nav ul{
-        flex-direction:column;
-        width:100%;
-        background-color:#424242;
-    }
-    a{
-        margin:-6px
-    }
+#option{
+    color:rgb(78, 149, 220);
+    flex: 1;
+    background:rgb(20, 38, 119);
+    padding:15px;
+    outline:4px solid rgb(0, 166, 255);
 
 }
+#description{
+    font-size:30px;
+    color:rgb(78, 149, 220);
+    flex: 1;
+    background:rgb(20, 38, 119);
+    padding:15px;
+    outline:8px solid rgb(0, 166, 255);
+    max-width: 300px;
+    transform:translateX(8px);
+}
+
+
+
+
+
+
+
+
+#wrapper{
+    grid-template-columns:  minmax(0,1fr) 4fr minmax(0,1fr);
+}
+
+
