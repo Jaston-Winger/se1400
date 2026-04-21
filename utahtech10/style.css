@@ -1,0 +1,300 @@
+
+* { box-sizing: border-box; }
+
+
+body{
+    margin:0;
+    background:linear-gradient(#eeeeee,#ffffff); color:#666666; font-family:Verdana, Arial, serif; background-attachment: fixed;
+}
+header{
+    background-color:#003058; 
+    color:#FFFFFF;
+    grid-row: 1 / 2;
+    grid-column: 2 / -2;
+}
+
+
+#wrapper{
+    display:grid; grid-auto-rows:minmax(0,auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+
+
+}
+h1{
+
+}
+header h1{
+
+    line-height:140%;
+    padding:.5rem;
+    background-image:url('utahtechlogo.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    padding-left:1em;
+    margin:0;
+}
+nav{
+    background-color:#424242;
+    top:0;
+    position:sticky;
+    font-weight:bold;
+    grid-row: 2/3;
+    grid-column: 2/8;
+}
+h2 {
+    color:#424242; font-family:Georgia,serif;
+}
+dt{
+    color:#003058; font-weight:bold;
+}
+#ut{
+    color:#BA1C21; font-weight:bold;
+}
+footer{
+    padding:1rem;
+    font-size:0.7rem; font-style:italic; text-align:center;
+}
+
+
+#alt{
+    width:300px
+}
+h3{
+    color:#003058
+}
+main{
+    background-color:#ffffff;
+    padding-left:2rem; padding-right:2rem;
+    grid-row:4/5;
+    grid-column:2/8;
+}
+#homehero{
+    grid-row:3/4;
+    grid-column:1/-1;
+    background-image:url('homehero.jpg');
+    height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center
+}
+#studenthero{
+    grid-row:3/4;
+    grid-column:1/-1;
+    background-image:url('studenthero.jpg');
+    height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center
+}
+#facultyhero{
+    grid-row:3/4;
+    grid-column:1/-1;
+    background-image:url('facultyhero.jpg');
+    height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center
+}
+#shophero{
+    grid-row:3/4;
+    grid-column:1/-1;
+    background-image:url('shophero.jpg');
+    height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center
+}
+#homehero, #studenthero, #factultyhero{
+    grid-row:3/4;
+    grid-column:1/-1;
+
+}
+footer{
+    grid-row:5/6;
+    grid-column:2/8;
+}
+header a{
+    color:#ffffff;
+    text-decoration: none;
+}
+main img{
+    float:right;
+    padding-left:2rem;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-flow:row nowrap;
+    list-style-type: none;
+
+}
+nav ul li{
+    width:100%;
+
+}
+nav a:hover
+{
+    background-color:#BA1C21
+
+}
+
+
+#bluebar{
+    background-color:#003058;
+    grid-row:1/2;
+    grid-column:1/-1;
+}
+
+#greybar{
+    background-color:#424242;
+    grid-row:2/3;
+    grid-column:1/-1;
+}
+
+
+form{
+    display:grid;
+    grid-template-rows:auto;
+    grid-template-columns:200px 1fr;
+    gap:0.75rem;
+    width:100%
+
+
+}
+
+
+input, textarea{
+    size:1rem;
+    padding:10px;
+    color:#666666;
+    background-color:#fafafa;
+    border:none;
+}
+input:focus, textarea:focus{
+    outline:none;
+    background-color:#f0f0f0;
+
+}
+video{
+    float:right;
+    margin-left:2em;
+}
+label{
+padding:10px;
+text-align:right;
+}
+#mySubmit{
+width:10rem;
+grid-column:2/3;
+}
+#alumnihero{
+    grid-row:3/4;
+    grid-column:1/-1;
+    background-image:url('alumnihero.jpg');
+    height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center
+}
+table{
+    margin: 0 auto;
+    border:1px solid #424242;
+    width:100%;
+    border-collapse:collapse;
+
+}
+td,th{
+    padding:5px;
+    border:1px solid #424242
+}
+td{
+    text-align:center;
+}
+.text{
+    text-align:left;
+}
+tr:nth-of-type(even){
+    background:#F3F3F3
+}
+
+
+
+nav a { 
+    text-decoration: none;
+    color:#FFFFFF;
+    padding:1rem 0rem;
+    display:block;
+    text-align:center;
+    transition: background-color 0.5s ease-out;
+
+
+}
+#shoppingcart {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#shoppingcart img{
+    width: 100%;
+    height:auto;
+
+}
+
+
+@media only screen and (max-width: 1100px){
+    #wrapper{
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
+    }
+}
+@media only screen and (max-width: 900px){
+#shoppingcart {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+    video{
+        float:none;
+        margin:0;
+    }
+    #wrapper{
+        nav{
+            grid-row:2/3;
+            grid-column:1/5;
+            position:unset;
+            width:100%;
+            height:auto;
+        }
+        nav ul{
+            flex-flow:column nowrap;
+        }
+        #homehero, #studenthero, #facultyhero,#shophero{
+            grid-row:2/3;
+            grid-column:5/8;
+        }
+        main img{
+            float:none;
+            width:100%;
+            height:auto;
+            padding-left:0px;
+            
+        }
+    }
+}
+@media only screen and (max-width:600px){
+#shoppingcart {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+    header h1{
+        background-image:none;
+        text-align:center;
+    }
+    nav{
+        grid-row:2/3;
+        grid-column:1/-1;
+    }
+    #homehero,#studenthero,#facultyhero, #alumnihero,#shophero{
+        display:none;
+    }
+
+}
+
